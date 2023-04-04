@@ -1,3 +1,4 @@
+//  https://modoocode.com/173
 //
 //  C++
 //
@@ -5,8 +6,9 @@
 //
 /* 함수의 오버로딩 */
 #include <iostream>
-//C와 달리 인수가 다르면 같은 함수명이여도 다른 함수로 취급
+//인수가 다르지만 함수명이 같은 함수 -> C++에선 다른 함수로 취급
 void print(int x) { std::cout << "int : " << x << std::endl; }
+void print(char x) { std::cout << "char : " << x << std::endl; }
 void print(double x) { std::cout << "double : " << x << std::endl; }
 
 int main() {
